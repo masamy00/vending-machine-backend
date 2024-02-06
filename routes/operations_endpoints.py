@@ -90,7 +90,7 @@ def perform_buy():
         return jsonify({"status": "error", "message": e}), 500
 
 
-@operations_bp.route('/reset', methods=['POST', 'GET'])
+@operations_bp.route('/reset', methods=['POST'])
 @requires_authentication
 @check_user_role(['buyer'])
 def perform_rest():
