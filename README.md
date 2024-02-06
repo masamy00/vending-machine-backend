@@ -21,6 +21,7 @@ candidate: Mohamed Ahmed Samy
 1. Clone the repository:
    ```bash
    git clone https://github.com/masamy00/flapkap-challange-vending-machine.git
+   cd flapkap-challange-vending-machine
    ```
    
 2. setup the environment
