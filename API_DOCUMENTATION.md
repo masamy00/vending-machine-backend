@@ -1,5 +1,6 @@
 # Vending Machine End-Points
-
+- postman collection to manually test the APIs
+- file "FLapKap.postman_collection.json"
 ## Introduction
 - REST API Server for vending machine operation
 - The server only allows request methods [GET, POST, PUT, DELETE]
