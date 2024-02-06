@@ -13,7 +13,7 @@ The server will run on port 3000
 ## Authentication
 
 - Except /users (POST)  to create a user
-- All the APIs requires 2 main header
+- All the APIs requires 2 main headers
   1. User-Id : the user primary key which will return while creation
   2. Password : the user password
 
