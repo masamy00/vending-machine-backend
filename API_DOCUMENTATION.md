@@ -62,7 +62,7 @@ The server will run on port 3000
     - amountAvailable (integer) - should be in (seller, buyer)
     - cost (integer) - must be a number dividable by 5
   
-### /users/{user_id} (DELETE) 
+### /products/{products_id} (DELETE) 
 - delete a product
 - only the seller of the product can remove
 

@@ -1,5 +1,5 @@
 # FlapKap Vending Machine Challenge
-back-end  API design for a vending machine operations
+candidate: Mohamed Ahmed Samy
 
 ## Features
 
