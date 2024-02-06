@@ -77,9 +77,9 @@ def update_user(user_id):
         try:
             db.session.commit()
         except IntegrityError as ie:
-            logging.error(f"{ie}")
             db.session.rollback()
             error_info = str(ie.orig) if ie.orig else str(ie)
+            logging.error(f"{error_info}")
             return jsonify({"status": "error", "message": error_info}), 400
         except Exception as e:
             logging.error(f"{e}")

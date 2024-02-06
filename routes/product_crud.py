@@ -40,9 +40,9 @@ def add_product():
              "amountAvailable": new_product.amountAvailable,
              "cost": new_product.cost, "sellerID": new_product.sellerID}), 201
     except IntegrityError as ie:
-        logging.error(f"IntegrityError: {ie}")
         db.session.rollback()
         error_info = str(ie.orig) if ie.orig else str(ie)
+        logging.error(f"IntegrityError: {error_info}")
         return jsonify({"status": "error",
                         "message": error_info}), 400
 
@@ -79,9 +79,9 @@ def update_product(product_id):
                  "amountAvailable": product.amountAvailable,
                  "cost": product.cost, "sellerID": product.sellerID}), 200
         except IntegrityError as ie:
-            logging.error(f"{ie}")
             db.session.rollback()
             error_info = str(ie.orig) if ie.orig else str(ie)
+            logging.error(f"{error_info}")
             return jsonify({"status": "error", "message": error_info}), 400
         except Exception as e:
             logging.error(f"{e}")
