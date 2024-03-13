@@ -1,4 +1,4 @@
-# FlapKap Vending Machine Challenge
+# Vending Machine Challenge
 candidate: Mohamed Ahmed Samy
 
 ## Features
